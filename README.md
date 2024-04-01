@@ -2,27 +2,27 @@
 
 Ce projet vise à explorer et comparer trois technologies de communication distribuée en Java : Java RMI, gRPC et les Sockets. Le projet met en œuvre des fonctionnalités spécifiques dans chaque système pour comprendre les différences et les avantages de chacun.
 
-## Fonctionnalités implémentées
-
-### Java RMI (Gestion de liste de tâches)
-
-- Ajout d'une nouvelle tâche à la liste.
-- Suppression d'une tâche existante de la liste.
-- Récupération de la liste complète des tâches.
-
-### Sockets (Service de chat)
-
-- Envoi de messages texte à un salon de discussion commun.
-- Récupération des messages envoyés par d'autres utilisateurs.
-
-### gRPC (Service de messagerie)
-
-- Envoi de messages texte à un destinataire spécifié.
-- Récupération des messages reçus pour un utilisateur donné.
-
 ## Installation et exécution
 
 1. Cloner ce dépôt sur votre machine locale.
 2. Ouvrir le projet dans votre environnement de développement (IntelliJ IDEA, Eclipse, etc.).
-3. Compiler et exécuter les serveurs et les clients pour chaque technologie selon les instructions fournies dans le code et les fichiers README spécifiques à chaque technologie.
+Comment exécuter :
+-----------Java RMI :
+Accédez au répertoire java-rmi.
+Compilez les fichiers Java en exécutant javac *.java.
+Lancez le registre RMI en exécutant rmiregistry.
+Exécutez le serveur RMI avec java RMIServer.
+Exécutez le client RMI avec java RMIClient.
+------------Sockets :
+Accédez au répertoire sockets.
+Compilez les fichiers Java en exécutant javac *.java.
+Lancez le serveur de chat avec java ChatServer.
+Lancez autant de clients que vous le souhaitez avec java ChatClient.
+------------gRPC :
+Le module gRPC a été généré à l'aide de Maven. Assurez-vous que le module est correctement généré et compilé.
+Lancez le serveur gRPC avec java -jar grpc-messaging-server.jar.
+Lancez le client gRPC avec java -jar grpc-messaging-client.jar.
 
+Remarques :
+Assurez-vous d'avoir Java installé sur votre machine.
+Pour le module gRPC, veuillez réessayer la génération du module à l'aide de Maven.
